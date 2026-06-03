@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Rohansom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 50px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            font-size: 14px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .contact-info a:hover {
+            opacity: 0.8;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .job, .education, .project {
+            margin-bottom: 25px;
+        }
+
+        .job-header, .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .job-title, .degree {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .company, .school {
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+        }
+
+        .job-description, .education-details {
+            color: #666;
+            margin-top: 8px;
+            padding-left: 20px;
+            border-left: 3px solid #f0f0f0;
+        }
+
+        .job-description li {
+            margin-bottom: 8px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category-title {
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .skill-category p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 20px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .job-header {
+                flex-direction: column;
+            }
+
+            .date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="portfolio.html" class="back-link">← Back to Portfolio</a>
+
+    <div class="container">
+        <header>
+            <h1>Rohan Somkuwar</h1>
+            <p>Creative Developer & Designer</p>
+            <div class="contact-info">
+                <a href="mailto:somrohan24@gmail.com">📧 somrohan24@gmail.com</a>
+                <a href="https://linkedin.com/in/rohan-somkuwar-86450b242" target="_blank">🔗 LinkedIn</a>
+                <a href="https://github.com/Rohansom" target="_blank">💻 GitHub</a>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h2 class="section-title">Professional Summary</h2>
+                <p>
+                    Passionate and creative developer with expertise in web development, interactive design, and 
+                    full-stack development. Specialized in creating beautiful, responsive, and user-friendly applications 
+                    using modern web technologies. Strong problem-solving skills and commitment to continuous learning.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-category-title">Frontend</div>
+                        <p>HTML5, CSS3, JavaScript, React, Vue.js, Bootstrap</p>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Backend</div>
+                        <p>Node.js, Express, Python, REST APIs</p>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Databases</div>
+                        <p>MongoDB, MySQL, PostgreSQL, Firebase</p>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Tools & Platforms</div>
+                        <p>Git, GitHub, Docker, VS Code, Postman</p>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Design</div>
+                        <p>UI/UX Design, Figma, Responsive Design</p>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Other</div>
+                        <p>Web Animation, 3D Effects, PWA Development</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Full Stack Developer</div>
+                            <div class="company">Tech Company / Freelance</div>
+                        </div>
+                        <div class="date">2023 - Present</div>
+                    </div>
+                    <ul class="job-description">
+                        <li>Developed responsive web applications using React and Node.js</li>
+                        <li>Created interactive animations and 3D effects for enhanced user experiences</li>
+                        <li>Implemented RESTful APIs and database management with MongoDB</li>
+                        <li>Collaborated with designers to translate UI/UX mockups into functional applications</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Web Developer</div>
+                            <div class="company">Creative Studios</div>
+                        </div>
+                        <div class="date">2022 - 2023</div>
+                    </div>
+                    <ul class="job-description">
+                        <li>Built custom websites for various clients using HTML5, CSS3, and JavaScript</li>
+                        <li>Optimized web applications for performance and SEO</li>
+                        <li>Maintained and updated existing web applications</li>
+                        <li>Assisted in front-end design and user interface implementation</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Projects</h2>
+                
+                <div class="project">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">3D Diwali Greeting Card</div>
+                        </div>
+                        <div class="date">2026</div>
+                    </div>
+                    <div class="job-description">
+                        <p>
+                            An interactive 3D animated greeting card with dynamic fireworks, flickering diya flames, 
+                            and particle effects. Built with HTML5, CSS3 3D Transforms, and Vanilla JavaScript.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Weather Dashboard</div>
+                        </div>
+                        <div class="date">2026</div>
+                    </div>
+                    <div class="job-description">
+                        <p>
+                            A real-time weather dashboard that fetches data from OpenWeatherMap API. Features include 
+                            city search, real-time weather updates, detailed weather information, and responsive design.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education">
+                    <div class="education-header">
+                        <div>
+                            <div class="degree">Bachelor of Science in Computer Science</div>
+                            <div class="school">University Name</div>
+                        </div>
+                        <div class="date">2020 - 2024</div>
+                    </div>
+                    <div class="education-details">
+                        Specialized in Web Development and Software Engineering
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Certifications</h2>
+                <ul class="job-description">
+                    <li>Web Development Bootcamp - Online Learning Platform</li>
+                    <li>Advanced JavaScript & React - Professional Development</li>
+                    <li>UI/UX Design Principles - Design Institute</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
